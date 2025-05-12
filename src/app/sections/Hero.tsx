@@ -7,36 +7,43 @@ import Pill from "../components/Pill";
 export default function Hero() {
   return (
     <section className="w-full px-4 py-16 md:py-24 flex flex-col items-center text-center">
-      <Pill />
+      {/*Top Block */}
+      <div className="flex flex-col items-center">
+        <Pill />
 
-      <h1 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] lg:text-[72px] lg:leading-[80px] font-bold max-w-4xl mb-4">
-        The <em className="italic">future</em> of trust. <br />
-        Powered by Fieldguide
-      </h1>
+        <h1 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] lg:text-[72px] lg:leading-[80px] font-bold max-w-4xl mb-6">
+          The <em className="italic">future</em> of trust. <br />
+          Powered by Fieldguide
+        </h1>
 
-      <p className="text-gray-white max-w-xl mb-6 text-base md:text-lg">
-        The Fieldguide AI Platform for Advisory & Audit Firms saves time
-        increases margins, and improves client satisfaction.
-      </p>
+        <p className="mb-8 text-gray-white max-w-xl text-[16px] leading-[22px] md:text-[18px] md:leading-[26px]">
+          The Fieldguide AI Platform for Advisory & Audit Firms saves time
+          increases margins, and improves client satisfaction.
+        </p>
 
-      <Button text="Get Started" />
+        <Button text="Get Started" />
+      </div>
 
-      <Image
-        src="/images/assets/years.svg"
-        alt="Hero illustration"
-        width={239}
-        height={51}
-        className="mt-6"
-      />
+      {/*Bottom Block */}
+      <div className="mt-12 flex flex-col items-center">
+        <Image
+          src="/images/assets/years.svg"
+          alt="Hero illustration"
+          width={239}
+          height={51}
+          className="mb-6"
+        />
 
-      <h4 className="text-2xl leading-[33.6px] font-semibold mb-2">
-        Trusted by Industry Leaders
-      </h4>
+        <h4 className="text-2xl leading-[33.6px] font-semibold mb-6">
+          Trusted by Industry Leaders
+        </h4>
 
-      <p className="text-gray-white2 max-w-xl mb-6 text-base md:text-lg">
-        3x Winner - CPA Practice Advisor
-      </p>
+        <p className="text-gray-white2 max-w-xl mb-6 text-base md:text-lg">
+          3x Winner - CPA Practice Advisor
+        </p>
+      </div>
 
+      {/* Video Component */}
       <VideoPlayer />
     </section>
   );
