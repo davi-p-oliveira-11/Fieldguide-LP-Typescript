@@ -31,14 +31,14 @@ export default function Hero() {
           alt="Hero illustration"
           width={239}
           height={51}
-          className="mb-6"
+          className="mb-6 w-40 md:w-60 lg:w-[239px] h-auto"
         />
 
-        <h4 className="text-2xl leading-[33.6px] font-semibold mb-6">
+        <h4 className="text-xl leading-7 md:text-2xl md:leading-[33.6px] font-semibold mb-6">
           Trusted by Industry Leaders
         </h4>
 
-        <p className="text-gray-white2 max-w-xl mb-6 text-base md:text-lg">
+        <p className="text-gray-white2 max-w-xl text-[16px] leading-[22px] md:text-[18px] md:leading-[26px] mb-6">
           3x Winner - CPA Practice Advisor
         </p>
       </div>
