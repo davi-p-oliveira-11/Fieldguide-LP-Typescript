@@ -4,11 +4,23 @@ import TestimonialCard from "../components/TestimonialCard";
 import DataCard from "../components/DataCard";
 
 export default function TestimonialSection() {
+  interface TestimonialSectionContent {
+    title: string;
+    subtext: string;
+  }
+
+  const infoSection: TestimonialSectionContent = {
+    title: "Trusted by industries leaders",
+    subtext: "Trusted by accounting firms and professionals worldwide.",
+  };
+
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto text-center">
-      <h3 className="text-2xl font-bold mb-2">What our clients say</h3>
-      <p className="mb-6 max-w-xl mx-auto">
-        Trusted by accounting firms and professionals worldwide.
+      <h2 className="text-[32px] leading-[40px] md:text-[40px] md:leading-[48px] lg:text-[48px] lg:leading-[52px] font-semibold mb-4">
+        {infoSection.title}
+      </h2>
+      <p className="text-[#d0d0d0] text-[16px] leading-[22px] md:text-[18px] md:leading-[26px] max-w-2xl mx-auto mb-16">
+        {infoSection.subtext}
       </p>
       <div className="mx-auto max-w-[696px] grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
         {logos.slice(0, 4).map((logo, index) => (
