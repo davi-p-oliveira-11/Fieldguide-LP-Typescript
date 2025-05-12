@@ -24,18 +24,17 @@ export default function Hero() {
       <Image
         src="/images/assets/years.svg"
         alt="Hero illustration"
-        width={238}
+        width={239}
         height={51}
         className="mt-6"
       />
 
-      <h4 className="text-xl font-semibold mb-2">
+      <h4 className="text-2xl leading-[33.6px] font-semibold mb-2">
         Trusted by Industry Leaders
       </h4>
 
-      <p className="text-muted-foreground max-w-xl mb-8">
-        Join thousands of professionals who rely on FieldGuide to transform
-        their audit process.
+      <p className="text-gray-white2 max-w-xl mb-6 text-base md:text-lg">
+        3x Winner - CPA Practice Advisor
       </p>
 
       <VideoPlayer />
