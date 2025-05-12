@@ -9,17 +9,17 @@ export default function Hero() {
     <section className="w-full px-4 py-16 md:py-24 flex flex-col items-center text-center">
       <Pill />
 
-      <h1 className="text-4xl md:text-5xl font-bold max-w-4xl mb-4">
-        The future of trust. <br />
+      <h1 className="text-[40px] leading-[48px] md:text-[56px] md:leading-[64px] lg:text-[72px] lg:leading-[80px] font-bold max-w-4xl mb-4">
+        The <em className="italic">future</em> of trust. <br />
         Powered by Fieldguide
       </h1>
 
-      <p className="text-muted-foreground max-w-xl mb-6 text-base md:text-lg">
-        Streamline your workflows, collaborate in real-time, and deliver
-        top-tier results with less effort.
+      <p className="text-gray-white max-w-xl mb-6 text-base md:text-lg">
+        The Fieldguide AI Platform for Advisory & Audit Firms saves time
+        increases margins, and improves client satisfaction.
       </p>
 
-      <Button />
+      <Button text="Get Started" />
 
       <Image
         src="/images/assets/years.svg"

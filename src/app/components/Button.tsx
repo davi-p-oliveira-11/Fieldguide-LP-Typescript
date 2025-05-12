@@ -6,7 +6,7 @@ interface ButtonProps {
 
 export default function Button(props: ButtonProps) {
   return (
-    <button className="bg-green-primary px-5 py-2 rounded-sm">
+    <button className="bg-green-primary hover:bg-green-primary-hover px-10 py-4 rounded-lg font-medium text-base cursor-pointer">
       {props.text || "Send"}
     </button>
   );

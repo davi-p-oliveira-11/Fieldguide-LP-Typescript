@@ -3,7 +3,8 @@
 @theme {
   --color-*: initial;
 
-  --color-green-primary: #36853a;
+  --color-green-primary: #3c9541;
+  --color-green-primary-hover: #36853a;
   --color-blue-background: #1a232d;
 
   --color-gray-white: #dadada;
