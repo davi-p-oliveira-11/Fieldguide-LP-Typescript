@@ -2,13 +2,12 @@ import React from "react";
 import Button from "../components/Button";
 import Image from "next/image";
 import VideoPlayer from "../components/VideoPlayer";
+import Pill from "../components/Pill";
 
 export default function Hero() {
   return (
     <section className="w-full px-4 py-16 md:py-24 flex flex-col items-center text-center">
-      <div className="bg-muted px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-        Empowering Audit Professionals
-      </div>
+      <Pill />
 
       <h1 className="text-4xl md:text-5xl font-bold max-w-4xl mb-4">
         The future of trust. <br />
