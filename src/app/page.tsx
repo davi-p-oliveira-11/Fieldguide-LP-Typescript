@@ -1,3 +1,4 @@
+import Credits from "./components/Credits";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Companies from "./sections/Companies";
@@ -16,6 +17,7 @@ export default function Home() {
       <TestimonialSection />
       <CTA />
       <Footer />
+      <Credits />
     </main>
   );
 }
