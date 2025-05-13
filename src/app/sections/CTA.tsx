@@ -2,17 +2,26 @@ import React from "react";
 import { logos } from "../constants/LogoCarousel";
 
 export default function CTA() {
+  interface CTASection {
+    title: string;
+    subtitle: string;
+  }
+
+  const callToAction: CTASection = {
+    title:
+      "Learn why the future of advisory and audit services is powered by Fieldguide",
+    subtitle:
+      " Top 500 firms trust the Fieldguide AI Platform for Advisory & Audit Firms. Learn how Fieldguide can help your firm.",
+  };
+
   return (
     <section className="py-20 px-4 text-center max-w-4xl mx-auto">
-      <h3 className="text-3xl font-bold mb-4">
-        Ready to transform your workflow?
-        <br />
-        Get started with our platform today.
+      <h3 className="text-[44px] leading-[56px] font-semibold mb-4">
+        {callToAction.title}
       </h3>
 
-      <p className="mb-8 text-gray-600">
-        Sign up now and join thousands of professionals already using our
-        solution.
+      <p className="text-[16px] leading-[22px] font-normal text-[#D8D8D8] mb-8">
+        {callToAction.subtitle}
       </p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 max-w-2xl mx-auto">
