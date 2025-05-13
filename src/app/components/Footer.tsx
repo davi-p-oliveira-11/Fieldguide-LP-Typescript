@@ -26,21 +26,26 @@ export default function Footer() {
               const IconComponent = iconMap[icon as keyof typeof iconMap];
               return (
                 <a key={index} href={url} aria-label={name}>
-                  <IconComponent className="w-6 h-6 hover:text-gray-800 transition" />
+                  <IconComponent className="w-6 h-6  mt-8" />
                 </a>
               );
             })}
           </div>
-          <p className="text-sm">© {currentYear}</p>
+          <p className="text-sm">© {currentYear} Fieldguide</p>
         </div>
 
         {footerLinks.map((section, idx) => (
           <div key={idx}>
-            <h4 className="text-lg font-semibold mb-4">{section.title}</h4>
+            <h4 className="text-base font-medium leading-[22px] mb-4">
+              {section.title}
+            </h4>
             <ul className="space-y-2 text-sm">
               {section.links.map((link, i) => (
                 <li key={i}>
-                  <a href="#" className="hover:text-gray-800 transition">
+                  <a
+                    href="#"
+                    className="text-sm font-normal leading-[22px] text-gray-400 hover:text-white transition-colors duration-200"
+                  >
                     {link}
                   </a>
                 </li>

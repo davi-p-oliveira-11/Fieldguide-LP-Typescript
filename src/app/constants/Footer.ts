@@ -1,41 +1,40 @@
 export const footerLinks = [
   {
+    title: "Products",
+    links: [
+      "Advisory & Audit Cloud",
+      "Fieldguide AI",
+      "Engagement Hub",
+      "Request Managemen",
+      "Document Management",
+      "Reporting Automation",
+      "Client Hub",
+      "Integrations",
+    ],
+  },
+  {
+    title: "Solutions",
+    links: [
+      "Solutions Overview",
+      "Risk Advisory",
+      "Cybersecurity & Privacy",
+      "API Reference",
+      "Regulatory Compliance",
+      "SOC Readiness",
+      "SOC Audit",
+      "IT Audit",
+    ],
+  },
+  {
     title: "Company",
     links: [
-      "About Us",
+      "About",
       "Careers",
       "Blog",
-      "Press",
-      "Privacy Policy",
-      "Terms of Service",
-      "Partners",
-      "Affiliates",
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      "Documentation",
-      "Tutorials",
-      "Webinars",
-      "API Reference",
-      "Community",
-      "Guides",
-      "Events",
-      "Changelog",
-    ],
-  },
-  {
-    title: "Support",
-    links: [
-      "Help Center",
-      "Contact Us",
-      "Status",
-      "Live Chat",
-      "Report a Bug",
-      "FAQ",
       "Security",
-      "Feedback",
+      "Privacy",
+      "Terms",
+      "Cookie Policy",
     ],
   },
 ];
@@ -44,7 +43,7 @@ export const socialMedia = [
   {
     name: "Facebook",
     url: "#",
-    icon: "Facebook", // to be imported dynamically
+    icon: "Facebook",
   },
   {
     name: "Twitter",
