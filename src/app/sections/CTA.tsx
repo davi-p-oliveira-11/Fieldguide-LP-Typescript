@@ -1,5 +1,6 @@
 import React from "react";
 import { logos } from "../constants/LogoCarousel";
+import Input from "../components/Input";
 
 export default function CTA() {
   interface CTASection {
@@ -16,29 +17,22 @@ export default function CTA() {
 
   return (
     <section className="py-20 px-4 text-center max-w-4xl mx-auto">
-      <h3 className="text-[44px] leading-[56px] font-semibold mb-4">
+      <h3 className="text-2xl leading-8 font-semibold mb-4 md:text-[44px] md:leading-[56px]">
         {callToAction.title}
       </h3>
 
-      <p className="text-[16px] leading-[22px] font-normal text-[#D8D8D8] mb-8">
+      <p className="text-base leading-[22px] font-normal text-[#D8D8D8] mb-8 md:text-[16px]">
         {callToAction.subtitle}
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 max-w-2xl mx-auto">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="w-full sm:w-[85%] px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
-        />
-        <button className="w-full sm:w-[15%] bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition">
-          Join
-        </button>
-      </div>
+      <Input />
 
       <div className="mx-auto max-w-[696px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 justify-items-center">
         {logos.slice(0, 7).map((logo, index) => (
           <div key={index} className="flex justify-center items-center">
             <img
+              width={110}
+              height={30}
               src={logo}
               alt={`Logo ${index}`}
               className="w-20 h-20 object-contain"
