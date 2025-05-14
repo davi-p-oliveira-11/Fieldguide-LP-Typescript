@@ -46,7 +46,15 @@ export default function Hero() {
       </div>
 
       {/* Video Component */}
-      <VideoPlayer />
+      {/* <VideoPlayer /> */}
+
+      <div className="w-full max-w-4xl mx-auto mb-12">
+        <img
+          src="/images/assets/gif-video.png"
+          alt="Fieldguide product demo"
+          className="w-full h-auto rounded-lg object-cover"
+        />
+      </div>
     </section>
   );
 }

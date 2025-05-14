@@ -29,13 +29,13 @@ export default function CTA() {
 
       <div className="mx-auto max-w-[974px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-8 justify-items-center">
         {logos.slice(0, 7).map((logo, index) => (
-          <div key={index} className="flex justify-center items-center">
+          <div key={index} className="flex justify-center items-center w-full">
             <img
               width={130}
               height={51}
               src={logo}
               alt={`Logo ${index}`}
-              className="w-40 h-30 object-contain"
+              className="w-full max-w-[130px] h-auto object-contain"
             />
           </div>
         ))}
