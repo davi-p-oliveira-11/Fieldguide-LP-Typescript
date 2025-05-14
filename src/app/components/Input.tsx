@@ -29,7 +29,7 @@ export default function EmailSignupForm() {
     <div className="relative w-full max-w-[974px] mx-auto mb-12">
       <form
         onSubmit={handleSubmit}
-        className="h-[48px] bg-gradient-to-r from-[#757575] to-[#36853a] rounded-lg flex overflow-hidden px-[3px]"
+        className="h-[48px] bg-blue-gray rounded-lg flex overflow-hidden px-[3px]"
       >
         <input
           type="email"
