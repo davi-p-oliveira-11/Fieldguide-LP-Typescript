@@ -1,3 +1,42 @@
+export const metadata = {
+  metadataBase: new URL("http://localhost:3000"),
+  title: "Fieldguide – AI-Powered Audit Platform",
+  description:
+    "Fieldguide is an all-in-one platform transforming audit and advisory services with AI, automation, and collaboration.",
+  keywords: [
+    "audit platform",
+    "AI audit",
+    "Fieldguide",
+    "audit automation",
+    "compliance tools",
+    "audit software",
+    "CPA firm tools",
+  ],
+  openGraph: {
+    title: "Fieldguide – AI-Powered Audit Platform",
+    description:
+      "Fieldguide revolutionizes how audit and advisory firms operate with cutting-edge automation and collaborative tools.",
+    url: "https://www.fieldguide.ai",
+    siteName: "Fieldguide",
+    images: [
+      {
+        url: "/images/fieldguide-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Fieldguide Platform Screenshot",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fieldguide – AI-Powered Audit Platform",
+    description:
+      "Fieldguide helps CPA firms save time and improve collaboration using AI and automation.",
+    images: ["/images/fieldguide-og.png"],
+  },
+};
+
 import Credits from "./components/Credits";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
