@@ -1,5 +1,5 @@
 export const metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://fieldguide-ai.vercel.app/"),
   title: "Fieldguide – AI-Powered Audit Platform",
   description:
     "Fieldguide is an all-in-one platform transforming audit and advisory services with AI, automation, and collaboration.",
@@ -16,7 +16,7 @@ export const metadata = {
     title: "Fieldguide – AI-Powered Audit Platform",
     description:
       "Fieldguide revolutionizes how audit and advisory firms operate with cutting-edge automation and collaborative tools.",
-    url: "https://www.fieldguide.ai",
+    url: "https://fieldguide-ai.vercel.app/",
     siteName: "Fieldguide",
     images: [
       {
